@@ -1,0 +1,22 @@
+.table {
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    margin-top: -257px;
+    margin-left: -257px;
+  }
+
+  .table td {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    text-align: center;
+    font-size: 3.8vw;
+    cursor: pointer;
+  }
+
+  td{
+      color: black;
+  }
+
+  
