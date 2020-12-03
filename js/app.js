@@ -24,7 +24,7 @@ init();
 
 
 function init(){
-    var table=document.getElementById('field');
+    
     var tbl = (new Array(8)).fill(0);
     tbl.forEach((_, i)=>{
         tbl[i] = (new Array(8)).fill(0);
@@ -37,8 +37,15 @@ function init(){
     tbl[4][3]=-1;
     //初期設定２個の白黒を１と−１で代入。
     console.log(tbl);
-    var abe = table.createElement('tr');
-    abe.innerHTML = "安倍晋三首相";
+
+    var table = document.getElementById('field');
+    var tableMain = document.createElement('table');
+    var abe = document.createElement('tr');
+    var makeTr = tableMain.appendChild(abe);
+    var ibe = document.createElement('td');
+    var makeTd = tableMain.appendChild(ibe);
+    makeTd.textContent = "●" ;
+
 
     console.log('test');
 
