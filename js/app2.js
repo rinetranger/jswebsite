@@ -16,6 +16,18 @@ function start(){
     makeHeader.style.justifyContent="space-between";
     console.log(makeTitle);
 
+    // たいとる
+    var makeName =document.createElement('h2');
+    makeName.textContent="Salon de Sats";
+    makeName.style.fontSize="24px"
+    makeName.style.width='200px';
+    makeName.style.heigt="100px";
+    makeName.style.padding ='43px';
+    makeName.style.color = "white";
+    makeName.style.fontFamily='Courier New'
+    makeHeader.appendChild(makeName);
+    
+
     // ナビの生成と挿入
     var makeNav = document.createElement('nav');
     makeHeader.appendChild(makeNav);
@@ -76,14 +88,95 @@ function start(){
     makeMain.appendChild(makeMainTitle);
     makeMainTitle.textContent='Salon de Sats';
     makeMainTitle.style.position="absolute";
-    makeMainTitle.style.color="white";
+    makeMainTitle.style.color="skyblue";
+    makeMainTitle.style.fontStyle="bold";
     makeMainTitle.style.top='35%';
     makeMainTitle.style.left="35%";
-    makeMainTitle.style.fontSize="65px"
+    makeMainTitle.style.fontSize="65px";
+    makeMainTitle.style.fontFamily='Courier New';
+    
+    var makeSecondMain =document.createElement("div");
+    container3.appendChild(makeSecondMain);
+   
+
+    var makeSecondTitle =document.createElement('h3');
+    makeSecondMain.appendChild(makeSecondTitle);
+    makeSecondTitle.textContent="New Information";
+    makeSecondTitle.style.textAlign='center';
+    makeSecondTitle.style.fontSize="30px";
+    makeSecondTitle.style.margin = "40px";
+    makeSecondTitle.style.font = "bold";
+
+
+    var makeSecondImage=document.createElement('img');
+    makeSecondMain.appendChild(makeSecondImage);
+    makeSecondImage.src="img/human002.jpg";
+    makeSecondImage.style.width = "400px" ;
+    makeSecondImage.style.height = "300px" ;
+    makeSecondImage.style.margin="30px";
     
 
+    var makeSecondImage1=document.createElement('img');
+    makeSecondMain.appendChild(makeSecondImage1);
+    makeSecondImage1.src="img/human001.jpg";
+    makeSecondImage1.style.width = "400px" ;
+    makeSecondImage1.style.height = "300px" ;
+    makeSecondImage1.style.margin="30px";
+
+    var makeSecondImage2=document.createElement('img');
+    makeSecondMain.appendChild(makeSecondImage2);
+    makeSecondImage2.src="img/human003.jpg";
+    makeSecondImage2.style.width = "400px" ;
+    makeSecondImage2.style.height = "300px" ;
+    makeSecondImage2.style.margin="30px"
+
+    var makeSecondImage3=document.createElement('img');
+    makeSecondMain.appendChild(makeSecondImage3);
+    makeSecondImage3.src="img/human004.jpg";
+    makeSecondImage3.style.width = "400px" ;
+    makeSecondImage3.style.height = "300px" ;
+    makeSecondImage3.style.margin="30px";
+
+    var makeSecondImage4=document.createElement('img');
+    makeSecondMain.appendChild(makeSecondImage4);
+    makeSecondImage4.src="img/flower001.jpg";
+    makeSecondImage4.style.width = "400px" ;
+    makeSecondImage4.style.height = "300px" ;
+    makeSecondImage4.style.margin="30px";
+
+    var makeSecondImage5=document.createElement('img');
+    makeSecondMain.appendChild(makeSecondImage5);
+    makeSecondImage5.src="img/flower003.jpg";
+    makeSecondImage5.style.width = "400px" ;
+    makeSecondImage5.style.height = "300px" ;
+    makeSecondImage5.style.margin="30px";
+
+
+    var makeAbout =document.createElement('div');
+    container4.appendChild(makeAbout);
+    makeAbout.textContent="About";
+    makeAbout.style.textAlign='center';
+    makeAbout.style.fontSize="30px";
+    makeAbout.style.font="bold";
+    makeAbout.style.margin="40px";
+
+
+    var makeAboutContent =document.createElement('div');
+    container4.appendChild(makeAboutContent);
+    makeAboutContent.style.display="flex";
+
+
+    var makeAboutImage =docume.createElement('img');
+    makeAboutImage.src = 'img/diploma_aroma.jpg';
+    makeAboutContent.appendChild(makeAboutImage);
     
+    makeAboutImage.style.width = "600px";
+    makeAboutImage.style.height = "400px" ;
+    makeAboutImage.style.margin="100px";
+
+
+
 
 
     console.log('test');
-}
+}s

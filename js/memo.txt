@@ -26,3 +26,36 @@
 
 まず配列を作る。
 で状態を管理する。レンダリングする。
+
+
+
+[data-scroll='out'] .char
+      visibility hidden
+
+    [data-scroll='in']
+      overflow hidden
+      position relative
+
+      .char
+        transition-delay .5s
+
+      &:after
+        content ''
+        height 100%
+        width 100%
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        background #fff
+        animation block .5s .25s both
+
+
+        @keyframes block
+          0%
+            transform translate(-110%, 0)
+          45%, 55%
+            transform translate(0, 0)
+          100%
+            transform translate(110%, 0)
