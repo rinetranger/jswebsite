@@ -176,14 +176,20 @@ h2{
 .p-text{
     padding: 15px;
 }
-#owner{
+.owner{
     width: 50%;
     padding: 70px;
     height:auto ;
+    opacity : 0;
+    transform: translateX(-24px);
+    transition: 1s;
 }
 .small-container2{
     display: flex;
 }
-#sayhello{
+.sayhello{
     padding: 70px;
+    opacity : 0;
+    transform: translateX(24px);
+    transition: 1s;
 }
