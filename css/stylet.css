@@ -176,3 +176,14 @@ h2{
 .p-text{
     padding: 15px;
 }
+#owner{
+    width: 50%;
+    padding: 70px;
+    height:auto ;
+}
+.small-container2{
+    display: flex;
+}
+#sayhello{
+    padding: 70px;
+}
